@@ -13,6 +13,7 @@
 		838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838E04B91E5F5DDF00EC02DD /* Main.storyboard */; };
 		838E04C61E5F5DDF00EC02DD /* Marvin401MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04C51E5F5DDF00EC02DD /* Marvin401MacOSTests.swift */; };
 		838E04D11E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */; };
+		EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868611E5F7ADA0001261C /* Courtney.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		838E04CC1E5F5DDF00EC02DD /* Marvin401MacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvin401MacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvin401MacOSUITests.swift; sourceTree = "<group>"; };
 		838E04D21E5F5DDF00EC02DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB0868611E5F7ADA0001261C /* Courtney.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Courtney.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				838E04B51E5F5DDF00EC02DD /* ViewController.swift */,
 				838E04B71E5F5DDF00EC02DD /* Assets.xcassets */,
 				838E04B91E5F5DDF00EC02DD /* Main.storyboard */,
+				EB0868611E5F7ADA0001261C /* Courtney.storyboard */,
 				838E04BC1E5F5DDF00EC02DD /* Info.plist */,
 			);
 			path = Marvin401MacOS;
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */,
 				838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */,
 				838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */,
 			);
@@ -496,6 +500,7 @@
 				838E04D71E5F5DDF00EC02DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838E04D81E5F5DDF00EC02DD /* Build configuration list for PBXNativeTarget "Marvin401MacOSTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +509,7 @@
 				838E04DA1E5F5DDF00EC02DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		838E04DB1E5F5DDF00EC02DD /* Build configuration list for PBXNativeTarget "Marvin401MacOSUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +518,7 @@
 				838E04DD1E5F5DDF00EC02DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
