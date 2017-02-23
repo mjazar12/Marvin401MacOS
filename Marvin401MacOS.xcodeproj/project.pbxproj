@@ -14,6 +14,8 @@
 		838E04C61E5F5DDF00EC02DD /* Marvin401MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04C51E5F5DDF00EC02DD /* Marvin401MacOSTests.swift */; };
 		838E04D11E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */; };
 		EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868611E5F7ADA0001261C /* Courtney.storyboard */; };
+		EB0868641E5F7B600001261C /* Henry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868631E5F7B600001261C /* Henry.storyboard */; };
+		EB0868661E5F7B710001261C /* Ashwin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868651E5F7B710001261C /* Ashwin.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvin401MacOSUITests.swift; sourceTree = "<group>"; };
 		838E04D21E5F5DDF00EC02DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EB0868611E5F7ADA0001261C /* Courtney.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Courtney.storyboard; sourceTree = "<group>"; };
+		EB0868631E5F7B600001261C /* Henry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Henry.storyboard; path = ../Henry.storyboard; sourceTree = "<group>"; };
+		EB0868651E5F7B710001261C /* Ashwin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Ashwin.storyboard; path = ../Ashwin.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,8 @@
 				838E04B51E5F5DDF00EC02DD /* ViewController.swift */,
 				838E04B71E5F5DDF00EC02DD /* Assets.xcassets */,
 				838E04B91E5F5DDF00EC02DD /* Main.storyboard */,
+				EB0868651E5F7B710001261C /* Ashwin.storyboard */,
+				EB0868631E5F7B600001261C /* Henry.storyboard */,
 				EB0868611E5F7ADA0001261C /* Courtney.storyboard */,
 				838E04BC1E5F5DDF00EC02DD /* Info.plist */,
 			);
@@ -233,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */,
+				EB0868661E5F7B710001261C /* Ashwin.storyboard in Resources */,
+				EB0868641E5F7B600001261C /* Henry.storyboard in Resources */,
 				838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */,
 				838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */,
 			);
