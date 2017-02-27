@@ -269,7 +269,7 @@
                                                             <button toolTip="Long Term Plan" verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aFz-lr-S9k">
                                                                 <rect key="frame" x="20" y="24" width="19" height="33"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Asset 49@1024px" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Dcm-kG-lq4">
+                                                                <buttonCell key="cell" type="smallSquare" bezelStyle="smallSquare" image="Asset 50@1024px" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyUpOrDown" inset="2" id="Dcm-kG-lq4">
                                                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                     <font key="font" metaFont="system"/>
                                                                 </buttonCell>
@@ -372,6 +372,7 @@
     </scenes>
     <resources>
         <image name="Asset 49@1024px" width="20" height="20"/>
+        <image name="Asset 50@1024px" width="20" height="20"/>
         <image name="Asset 52@1024px" width="416.06106567382812" height="563.3587646484375"/>
         <image name="fav_tools" width="22.827068328857422" height="23.142856597900391"/>
         <image name="guy" width="1024" height="1024"/>
