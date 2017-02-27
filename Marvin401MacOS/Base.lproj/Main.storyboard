@@ -729,7 +729,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-B9-fsZ">
+                                        <button toolTip="Connect" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hGp-B9-fsZ">
                                             <rect key="frame" x="687" y="482" width="78" height="76"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="collaborate_1" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Ntv-Lj-dMY">
@@ -746,7 +746,7 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeU-XQ-6JI">
+                                        <button toolTip="Understand" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZeU-XQ-6JI">
                                             <rect key="frame" x="136" y="483" width="74" height="77"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="research" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="IIs-dm-0Kx">
@@ -754,7 +754,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5QZ-Yo-bLm">
+                                        <button toolTip="Long Term Plan" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5QZ-Yo-bLm">
                                             <rect key="frame" x="20" y="483" width="75" height="75"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="long_term_plan" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="rwQ-3K-ggg">
@@ -762,7 +762,7 @@
                                                 <font key="font" metaFont="system"/>
                                             </buttonCell>
                                         </button>
-                                        <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-G1-GVR">
+                                        <button toolTip="Find" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dOR-G1-GVR">
                                             <rect key="frame" x="578" y="483" width="77" height="75"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="find" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="Wky-3x-6k5">
@@ -793,7 +793,7 @@
                                                             <rect key="frame" x="1" y="1" width="727" height="417"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gO8-OF-fkp">
+                                                                <button toolTip="Calendar" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gO8-OF-fkp">
                                                                     <rect key="frame" x="31" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="calendar" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="TbY-zK-tPc">
@@ -801,7 +801,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaY-QJ-iWz">
+                                                                <button toolTip="Medications" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uaY-QJ-iWz">
                                                                     <rect key="frame" x="144" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="medications" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="k1a-af-BZC">
@@ -809,7 +809,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpL-lg-IxA">
+                                                                <button toolTip="Payments" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XpL-lg-IxA">
                                                                     <rect key="frame" x="249" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="payments" imagePosition="overlaps" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="eCq-0a-Iaa">
@@ -817,7 +817,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ze-Aq-OrS">
+                                                                <button toolTip="Vitals" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ze-Aq-OrS">
                                                                     <rect key="frame" x="31" y="63" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="vitals" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="GLd-93-IoM">
@@ -825,7 +825,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-ze-FTa">
+                                                                <button toolTip="Caregivers" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IQ2-ze-FTa">
                                                                     <rect key="frame" x="144" y="63" width="83" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="caregivers" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="wt8-y1-RHp">
@@ -833,7 +833,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M07-Te-xTa">
+                                                                <button toolTip="Financials" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M07-Te-xTa">
                                                                     <rect key="frame" x="258" y="63" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="financials" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="CvE-45-cgN">
@@ -841,7 +841,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-fN-RNH">
+                                                                <button toolTip="To-Do List" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nUE-fN-RNH">
                                                                     <rect key="frame" x="396" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="to_do_list" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="gUd-Sa-hab">
@@ -849,7 +849,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzi-In-Gwk">
+                                                                <button toolTip="Collaborate" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lzi-In-Gwk">
                                                                     <rect key="frame" x="509" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="collaborate" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="OSe-ec-cOs">
@@ -857,7 +857,7 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-Ih-mQN">
+                                                                <button toolTip="Contacts" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cbE-Ih-mQN">
                                                                     <rect key="frame" x="623" y="260" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="contacts" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="uFS-o5-nG0">
@@ -865,23 +865,15 @@
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXr-pi-pXn">
-                                                                    <rect key="frame" x="396" y="63" width="78" height="76"/>
+                                                                <button toolTip="Important Files and Pictures" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PXr-pi-pXn">
+                                                                    <rect key="frame" x="402" y="63" width="78" height="76"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="imp_files_and_pictures" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="XX8-PT-Nmr">
                                                                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="system"/>
                                                                     </buttonCell>
                                                                 </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAm-sa-i2K">
-                                                                    <rect key="frame" x="509" y="63" width="78" height="76"/>
-                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="appointment_essentials@128px" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bbg-ai-HAb">
-                                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                                                                        <font key="font" metaFont="system"/>
-                                                                    </buttonCell>
-                                                                </button>
-                                                                <button fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzx-uJ-dlF">
+                                                                <button toolTip="Notes" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gzx-uJ-dlF">
                                                                     <rect key="frame" x="627" y="51" width="70" height="80"/>
                                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                                     <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="notes" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="yNT-rs-MFG">
@@ -929,6 +921,15 @@
                                                                     <rect key="frame" x="41" y="235" width="59" height="17"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Calendar" id="jn2-66-lz1">
+                                                                        <font key="font" metaFont="system"/>
+                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                                    </textFieldCell>
+                                                                </textField>
+                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3g-Vr-oAG">
+                                                                    <rect key="frame" x="139" y="235" width="78" height="17"/>
+                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Medications" id="OZq-iQ-Pdo">
                                                                         <font key="font" metaFont="system"/>
                                                                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -1007,7 +1008,7 @@
                                                                     </textFieldCell>
                                                                 </textField>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b4i-OI-n62">
-                                                                    <rect key="frame" x="394" y="8" width="109" height="51"/>
+                                                                    <rect key="frame" x="387" y="8" width="109" height="51"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                                     <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Important Files and Pictures" id="bIY-NQ-ug5">
                                                                         <font key="font" metaFont="system"/>
@@ -1042,15 +1043,14 @@
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>
                                                                 </textField>
-                                                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="c3g-Vr-oAG">
-                                                                    <rect key="frame" x="139" y="235" width="78" height="17"/>
-                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Medications" id="OZq-iQ-Pdo">
+                                                                <button toolTip="Appointment Essentials" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QAm-sa-i2K">
+                                                                    <rect key="frame" x="514" y="63" width="78" height="76"/>
+                                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                                    <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="appointment_essentials@128px" imagePosition="only" alignment="center" imageScaling="proportionallyUpOrDown" inset="2" id="bbg-ai-HAb">
+                                                                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                                                         <font key="font" metaFont="system"/>
-                                                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
-                                                                    </textFieldCell>
-                                                                </textField>
+                                                                    </buttonCell>
+                                                                </button>
                                                             </subviews>
                                                         </view>
                                                         <color key="borderColor" red="0.61568627450000002" green="0.61568627450000002" blue="0.61568627450000002" alpha="1" colorSpace="calibratedRGB"/>
