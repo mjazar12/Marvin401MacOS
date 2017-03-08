@@ -11,6 +11,9 @@ import Cocoa
 
 class AddMedicationViewController: NSViewController {
     
+    @IBOutlet weak var medicineName: NSTextField!
+    @IBOutlet weak var datePicker: NSDatePicker!
+    let medicationScreenVC = MedicationScreenViewController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,5 +28,9 @@ class AddMedicationViewController: NSViewController {
     }
     
     
+    @IBAction func AddMedication(_ sender: NSButton) {
+        
+        medicationScreenVC.addToTable()
+    }
     
 }

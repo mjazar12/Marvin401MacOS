@@ -11,6 +11,11 @@ import Cocoa
 
 class MedicationScreenViewController: NSViewController {
     
+    @IBOutlet weak var MedicationScrollView: NSScrollView!
+    
+    var medicationLog = MedicationLog()
+    let addMedicationVC = AddMedicationViewController()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +29,13 @@ class MedicationScreenViewController: NSViewController {
         }
     }
     
+    func addToTable() {
+        let name = addMedicationVC.medicineName.stringValue
+        let date = addMedicationVC.datePicker.stringValue
+        var medicationEntered = Medication(medName: name, takeDate: date)
+        medicationLog.addMedication(medication: medicationEntered) //add to log
+        
+    }
     
     
 }
