@@ -11,7 +11,10 @@ import Cocoa
 
 class MedicationScreenViewController: NSViewController {
     
-    @IBOutlet weak var MedicationScrollView: NSScrollView!
+ 
+    @IBOutlet weak var MedicationTable: NSTableView!
+    @IBOutlet weak var Name: NSTextFieldCell!
+    @IBOutlet weak var Date: NSTextFieldCell!
     
     var medicationLog = MedicationLog()
     let addMedicationVC = AddMedicationViewController()
@@ -34,7 +37,8 @@ class MedicationScreenViewController: NSViewController {
         let date = addMedicationVC.datePicker.stringValue
         var medicationEntered = Medication(medName: name, takeDate: date)
         medicationLog.addMedication(medication: medicationEntered) //add to log
-        
+        //Name.stringValue(medicationEntered.name)
+        //Date.stringValue(medicationEntered.date)
     }
     
     
