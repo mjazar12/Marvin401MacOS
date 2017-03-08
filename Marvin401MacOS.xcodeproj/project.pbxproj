@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		838E04B41E5F5DDF00EC02DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */; };
-		838E04B61E5F5DDF00EC02DD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B51E5F5DDF00EC02DD /* ViewController.swift */; };
+		838E04B61E5F5DDF00EC02DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */; };
 		838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838E04B71E5F5DDF00EC02DD /* Assets.xcassets */; };
 		838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838E04B91E5F5DDF00EC02DD /* Main.storyboard */; };
 		838E04C61E5F5DDF00EC02DD /* Marvin401MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04C51E5F5DDF00EC02DD /* Marvin401MacOSTests.swift */; };
 		838E04D11E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */; };
-		EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868611E5F7ADA0001261C /* Courtney.storyboard */; };
-		EB0868641E5F7B600001261C /* Henry.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868631E5F7B600001261C /* Henry.storyboard */; };
-		EB0868661E5F7B710001261C /* Ashwin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB0868651E5F7B710001261C /* Ashwin.storyboard */; };
-		EB0868701E63E69E0001261C /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB08686F1E63E69E0001261C /* CheckButton.swift */; };
+		83EF24611E70C23200F81807 /* MedicationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24601E70C23200F81807 /* MedicationScreenViewController.swift */; };
+		83EF24631E70C25500F81807 /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24621E70C25500F81807 /* AddMedicationViewController.swift */; };
+		83EF24661E70C33C00F81807 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24641E70C33C00F81807 /* Medication.swift */; };
+		83EF24671E70C33C00F81807 /* MedicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24651E70C33C00F81807 /* MedicationLog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		838E04B01E5F5DDF00EC02DD /* Marvin401MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvin401MacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		838E04B51E5F5DDF00EC02DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		838E04B71E5F5DDF00EC02DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		838E04BA1E5F5DDF00EC02DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		838E04BC1E5F5DDF00EC02DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,10 +49,10 @@
 		838E04CC1E5F5DDF00EC02DD /* Marvin401MacOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvin401MacOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvin401MacOSUITests.swift; sourceTree = "<group>"; };
 		838E04D21E5F5DDF00EC02DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB0868611E5F7ADA0001261C /* Courtney.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Courtney.storyboard; sourceTree = "<group>"; };
-		EB0868631E5F7B600001261C /* Henry.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Henry.storyboard; path = ../Henry.storyboard; sourceTree = "<group>"; };
-		EB0868651E5F7B710001261C /* Ashwin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Ashwin.storyboard; path = ../Ashwin.storyboard; sourceTree = "<group>"; };
-		EB08686F1E63E69E0001261C /* CheckButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CheckButton.swift; path = ../CheckButton.swift; sourceTree = "<group>"; };
+		83EF24601E70C23200F81807 /* MedicationScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationScreenViewController.swift; sourceTree = "<group>"; };
+		83EF24621E70C25500F81807 /* AddMedicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
+		83EF24641E70C33C00F81807 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		83EF24651E70C33C00F81807 /* MedicationLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationLog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,14 +103,14 @@
 		838E04B21E5F5DDF00EC02DD /* Marvin401MacOS */ = {
 			isa = PBXGroup;
 			children = (
-				EB08686F1E63E69E0001261C /* CheckButton.swift */,
 				838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */,
-				838E04B51E5F5DDF00EC02DD /* ViewController.swift */,
+				838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */,
+				83EF24601E70C23200F81807 /* MedicationScreenViewController.swift */,
+				83EF24621E70C25500F81807 /* AddMedicationViewController.swift */,
 				838E04B71E5F5DDF00EC02DD /* Assets.xcassets */,
+				83EF24641E70C33C00F81807 /* Medication.swift */,
+				83EF24651E70C33C00F81807 /* MedicationLog.swift */,
 				838E04B91E5F5DDF00EC02DD /* Main.storyboard */,
-				EB0868651E5F7B710001261C /* Ashwin.storyboard */,
-				EB0868631E5F7B600001261C /* Henry.storyboard */,
-				EB0868611E5F7ADA0001261C /* Courtney.storyboard */,
 				838E04BC1E5F5DDF00EC02DD /* Info.plist */,
 			);
 			path = Marvin401MacOS;
@@ -241,9 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB0868621E5F7ADA0001261C /* Courtney.storyboard in Resources */,
-				EB0868661E5F7B710001261C /* Ashwin.storyboard in Resources */,
-				EB0868641E5F7B600001261C /* Henry.storyboard in Resources */,
 				838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */,
 				838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */,
 			);
@@ -270,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				838E04B61E5F5DDF00EC02DD /* ViewController.swift in Sources */,
-				EB0868701E63E69E0001261C /* CheckButton.swift in Sources */,
+				838E04B61E5F5DDF00EC02DD /* HomeViewController.swift in Sources */,
+				83EF24671E70C33C00F81807 /* MedicationLog.swift in Sources */,
 				838E04B41E5F5DDF00EC02DD /* AppDelegate.swift in Sources */,
+				83EF24611E70C23200F81807 /* MedicationScreenViewController.swift in Sources */,
+				83EF24661E70C33C00F81807 /* Medication.swift in Sources */,
+				83EF24631E70C25500F81807 /* AddMedicationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
