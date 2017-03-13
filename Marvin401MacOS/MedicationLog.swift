@@ -12,18 +12,26 @@ class MedicationLog{
     
     var medicationList = [Medication]()
     
+    init() {
+        
+    }
+    
     init(medList : [Medication]) {
         self.medicationList = medList
     }
     
     
     func sortByName() -> [Medication] {
-        return medicationList.sorted(by: { $0.name > $1.name })
+        return medicationList.sorted(by: { $0.name < $1.name })
         
     }
     
     func sortByDate() -> [Medication] {
-        return medicationList.sorted(by: { $0.date > $1.date })
+        return medicationList.sorted(by: { $0.date < $1.date })
+    }
+    
+    func addMedication(medication:Medication){
+        self.medicationList.append(medication)
     }
     
 }
