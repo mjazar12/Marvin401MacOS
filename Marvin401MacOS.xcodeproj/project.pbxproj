@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DF8FDFC1E82EA6D006090B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */; };
 		838E04B41E5F5DDF00EC02DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */; };
 		838E04B61E5F5DDF00EC02DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */; };
 		838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 838E04B71E5F5DDF00EC02DD /* Assets.xcassets */; };
-		838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838E04B91E5F5DDF00EC02DD /* Main.storyboard */; };
 		838E04C61E5F5DDF00EC02DD /* Marvin401MacOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04C51E5F5DDF00EC02DD /* Marvin401MacOSTests.swift */; };
 		838E04D11E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04D01E5F5DDF00EC02DD /* Marvin401MacOSUITests.swift */; };
 		83EF24611E70C23200F81807 /* MedicationScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24601E70C23200F81807 /* MedicationScreenViewController.swift */; };
@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		838E04B01E5F5DDF00EC02DD /* Marvin401MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvin401MacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		838E04B71E5F5DDF00EC02DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		838E04BA1E5F5DDF00EC02DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		838E04BC1E5F5DDF00EC02DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		838E04C11E5F5DDF00EC02DD /* Marvin401MacOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Marvin401MacOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04C51E5F5DDF00EC02DD /* Marvin401MacOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Marvin401MacOSTests.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 				838E04B71E5F5DDF00EC02DD /* Assets.xcassets */,
 				83EF24641E70C33C00F81807 /* Medication.swift */,
 				83EF24651E70C33C00F81807 /* MedicationLog.swift */,
-				838E04B91E5F5DDF00EC02DD /* Main.storyboard */,
+				1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */,
 				838E04BC1E5F5DDF00EC02DD /* Info.plist */,
 			);
 			path = Marvin401MacOS;
@@ -242,7 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				838E04B81E5F5DDF00EC02DD /* Assets.xcassets in Resources */,
-				838E04BB1E5F5DDF00EC02DD /* Main.storyboard in Resources */,
+				1DF8FDFC1E82EA6D006090B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,17 +306,6 @@
 			targetProxy = 838E04CD1E5F5DDF00EC02DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		838E04B91E5F5DDF00EC02DD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				838E04BA1E5F5DDF00EC02DD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		838E04D31E5F5DDF00EC02DD /* Debug */ = {

@@ -13,7 +13,7 @@ class AddMedicationViewController: NSViewController {
     
 
     var medicationEntered = Medication();
-    
+    var medScreen : MedicationScreenViewController!
     
     @IBOutlet weak var medicationName: NSTextField!
     @IBOutlet weak var prescriptionDate: NSDatePicker!
@@ -31,10 +31,15 @@ class AddMedicationViewController: NSViewController {
     }
     
     
+    
+    
     @IBAction func addMedication(_ sender: NSButton) {
         medicationEntered.addName(medName: medicationName.stringValue)
-        performSegue(withIdentifier: "AddMedicationSegue", sender: self)
-        
+//        performSegue(withIdentifier: "AddMedicationSegue", sender: self)
+//
+        medScreen.addToTable(medication: Medication(medName: medicationName.stringValue, takeDate: prescriptionDate.stringValue))
+        dismissViewController(self)
+        dismiss(self)
     }
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {

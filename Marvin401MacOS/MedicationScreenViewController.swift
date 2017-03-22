@@ -11,7 +11,6 @@ import Cocoa
 
 class MedicationScreenViewController: NSViewController {
     
- 
     @IBOutlet weak var MedicationTable: NSTableView!
     @IBOutlet weak var Name: NSTextFieldCell!
     @IBOutlet weak var Date: NSTextFieldCell!
@@ -33,15 +32,31 @@ class MedicationScreenViewController: NSViewController {
         }
     }
     
-    func addToTable() {
-       // let name = addMedicationVC.medicineName.stringValue
-     //   let date = addMedicationVC.datePicker.stringValue
-      //  var medicationEntered = Medication(medName: name, takeDate: date)
-       // medicationLog.addMedication(medication: medicationEntered) //add to log
-        //Name.stringValue(medicationEntered.name)
-        //Date.stringValue(medicationEntered.date)
+    func addToTable(medication : Medication) {
+        medicationLog.addMedication(medication: medication) //add to log
+        setRowValue(MedicationTable, name : "Name", row: 0)
     }
     
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return medicationLog.medicationList.count
+    }
+    
+    func setRowValue(_ tableView: NSTableView, name : String, row: Int) -> NSView? {
+        let nameCellView = MedicationTable.tableColumns[0].dataCell(forRow: row) as! NSTableCellView
+        
+    
+        nameCellView.textField?.stringValue = self.medicationLog.medicationList[row].name
+        // TODO: add other attributes
+        return nameCellView
+    
+    }
+    
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "AddMedicationSegue") {
+            let addMedication = segue.destinationController as! AddMedicationViewController;
+            addMedication.medScreen = self
+        }
+    }
     
 }
 

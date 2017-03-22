@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11762"/>
@@ -1196,7 +1196,7 @@
                                                         <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                         <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                         <tableColumns>
-                                                            <tableColumn width="118" minWidth="40" maxWidth="1000" id="Nj1-Si-8Aq">
+                                                            <tableColumn identifier="Name" width="118" minWidth="40" maxWidth="1000" id="Nj1-Si-8Aq">
                                                                 <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" title="Name">
                                                                     <font key="font" metaFont="smallSystem"/>
                                                                     <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
@@ -1261,7 +1261,7 @@
                                                 </subviews>
                                                 <nil key="backgroundColor"/>
                                             </clipView>
-                                            <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="spa-7Y-GfV">
+                                            <scroller key="horizontalScroller" verticalHuggingPriority="750" doubleValue="0.25" horizontal="YES" id="spa-7Y-GfV">
                                                 <rect key="frame" x="1" y="359" width="669" height="16"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </scroller>
@@ -1714,8 +1714,7 @@
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
                                                     <connections>
-                                                        <action selector="addMedication:" target="lci-MZ-1S0" id="OGC-4j-6xb"/>
-                                                        <segue destination="qn3-xb-wjC" kind="modal" id="Ywf-al-PjJ"/>
+                                                        <action selector="addMedication:" target="lci-MZ-1S0" id="A0T-iW-idM"/>
                                                     </connections>
                                                 </button>
                                                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qPY-k2-eLo">
@@ -2712,35 +2711,32 @@ Gw
         <image name="Asset 49@1024px" width="20" height="20"/>
         <image name="Asset 50@1024px" width="20" height="20"/>
         <image name="Asset 52@1024px" width="416.06106567382812" height="563.3587646484375"/>
-        <image name="appointment_essentials@128px" width="81.916168212890625" height="73.72454833984375"/>
-        <image name="calendar" width="77.919998168945312" height="82.080001831054688"/>
-        <image name="care_plan" width="45.104133605957031" height="61.051239013671875"/>
-        <image name="caregivers" width="76.314048767089844" height="76.314048767089844"/>
-        <image name="collaborate" width="66.801445007324219" height="66.671478271484375"/>
-        <image name="collaborate_1" width="140.910888671875" height="121.90099334716797"/>
-        <image name="conditions" width="46.819671630859375" height="50.459014892578125"/>
-        <image name="contacts" width="72.156181335449219" height="80.121475219726562"/>
-        <image name="fav_tools" width="22.827068328857422" height="23.142856597900391"/>
-        <image name="financials" width="64.190887451171875" height="80.121475219726562"/>
-        <image name="find" width="123.53176879882812" height="123.53176879882812"/>
+        <image name="appointment_essentials@128px" width="82.367996215820312" height="74.304000854492188"/>
+        <image name="calendar" width="79.071426391601562" height="82.928573608398438"/>
+        <image name="care_plan" width="45.774833679199219" height="61.509933471679688"/>
+        <image name="caregivers" width="76.760330200195312" height="76.760330200195312"/>
+        <image name="collaborate" width="66.820144653320312" height="66.820144653320312"/>
+        <image name="collaborate_1" width="141.15789794921875" height="122.21052551269531"/>
+        <image name="conditions" width="46.819671630859375" height="50.754096984863281"/>
+        <image name="contacts" width="72.626083374023438" height="80.765220642089844"/>
+        <image name="fav_tools" width="23.097743988037109" height="23.278196334838867"/>
+        <image name="financials" width="64.486953735351562" height="80.765220642089844"/>
+        <image name="find" width="123.83999633789062" height="123.83999633789062"/>
         <image name="findCareProducts" width="197" height="196"/>
         <image name="guy" width="1024" height="1024"/>
         <image name="home@1024px" width="70.085472106933594" height="70.085472106933594"/>
-        <image name="hotline" width="48.104347229003906" height="53.530433654785156"/>
-        <image name="imp_files_and_pictures" width="72.624725341796875" height="80.121475219726562"/>
+        <image name="hotline" width="48.277458190917969" height="53.687862396240234"/>
+        <image name="imp_files_and_pictures" width="73.252174377441406" height="80.765220642089844"/>
         <image name="locateCare" width="199" height="199"/>
-        <image name="long_term_plan" width="37" height="50.116687774658203"/>
-        <image name="medications" width="72" height="85.105987548828125"/>
-        <image name="notes" width="81.683296203613281" height="80.121475219726562"/>
-        <image name="payments" width="85.660484313964844" height="52.690441131591797"/>
-        <image name="plan_generator" width="45.16363525390625" height="56"/>
-        <image name="research" width="121.63822174072266" height="126.06143188476562"/>
-        <image name="settings" width="22" height="22"/>
-        <image name="shop" width="59.404956817626953" height="50.876033782958984"/>
-        <image name="to_do_list" width="69.913040161132812" height="66.913040161132812"/>
-        <image name="vitals" width="81.449165344238281" height="68.273567199707031"/>
+        <image name="long_term_plan" width="37.173912048339844" height="50.478260040283203"/>
+        <image name="medications" width="72.666664123535156" height="86"/>
+        <image name="notes" width="82" height="80.765220642089844"/>
+        <image name="payments" width="86" height="53.074287414550781"/>
+        <image name="plan_generator" width="45.818180084228516" height="56.290908813476562"/>
+        <image name="research" width="122.30136871337891" height="127.23287963867188"/>
+        <image name="settings" width="22.167064666748047" height="22.167064666748047"/>
+        <image name="shop" width="59.668506622314453" height="51.314918518066406"/>
+        <image name="to_do_list" width="70.434783935546875" height="67.304344177246094"/>
+        <image name="vitals" width="82.133331298828125" height="68.800003051757812"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="Ywf-al-PjJ"/>
-    </inferredMetricsTieBreakers>
 </document>
