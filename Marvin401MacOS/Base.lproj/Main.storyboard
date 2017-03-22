@@ -1223,9 +1223,6 @@
                                                                                 </textFieldCell>
                                                                             </textField>
                                                                         </subviews>
-                                                                        <connections>
-                                                                            <outlet property="textField" destination="plE-BX-9pw" id="muD-qF-6e1"/>
-                                                                        </connections>
                                                                     </tableCellView>
                                                                 </prototypeCellViews>
                                                             </tableColumn>
@@ -1256,9 +1253,6 @@
                                                                                 </textFieldCell>
                                                                             </textField>
                                                                         </subviews>
-                                                                        <connections>
-                                                                            <outlet property="textField" destination="cpn-Pk-nwW" id="Q2X-f1-pJg"/>
-                                                                        </connections>
                                                                     </tableCellView>
                                                                 </prototypeCellViews>
                                                             </tableColumn>
@@ -1739,6 +1733,9 @@
 Gw
 </string>
                                                     </buttonCell>
+                                                    <connections>
+                                                        <action selector="dismissController:" target="lci-MZ-1S0" id="esq-Ar-Kws"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                         </customView>
@@ -1757,9 +1754,7 @@ Gw
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="AddMedication" destination="b19-Pe-ncO" id="0ld-Nv-TCp"/>
-                        <outlet property="datePicker" destination="8th-Be-XYc" id="Q9Y-eJ-Kwd"/>
-                        <outlet property="medicineName" destination="D8O-fv-0Ne" id="zTh-1S-5O6"/>
+                        <outlet property="onClickAddMedication" destination="sHa-y3-con" id="NBE-9n-JSw"/>
                     </connections>
                 </viewController>
                 <customObject id="V28-iO-gcH" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
