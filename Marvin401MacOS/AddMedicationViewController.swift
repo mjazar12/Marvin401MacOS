@@ -11,9 +11,12 @@ import Cocoa
 
 class AddMedicationViewController: NSViewController {
     
-    @IBOutlet weak var medicineName: NSTextField!
-    @IBOutlet weak var datePicker: NSDatePicker!
-    let medicationScreenVC = MedicationScreenViewController()
+
+    var medicationEntered = Medication();
+    
+    
+    @IBOutlet weak var medicationName: NSTextField!
+    @IBOutlet weak var prescriptionDate: NSDatePicker!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +31,16 @@ class AddMedicationViewController: NSViewController {
     }
     
     
-    @IBAction func AddMedication(_ sender: NSButton) {
+    @IBAction func addMedication(_ sender: NSButton) {
+        medicationEntered.addName(medName: medicationName.stringValue)
+        performSegue(withIdentifier: "AddMedicationSegue", sender: self)
         
-        medicationScreenVC.addToTable()
     }
     
+    override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "AddMedicationSegue") {
+            let medicationScreenVC = segue.destinationController as! MedicationScreenViewController;
+            medicationScreenVC.medicationAdded = medicationEntered
+        }
+    }
 }

@@ -18,6 +18,7 @@ class MedicationScreenViewController: NSViewController {
     
     var medicationLog = MedicationLog()
     let addMedicationVC = AddMedicationViewController()
+    var medicationAdded = Medication()
     
     
     override func viewDidLoad() {
@@ -33,10 +34,10 @@ class MedicationScreenViewController: NSViewController {
     }
     
     func addToTable() {
-        let name = addMedicationVC.medicineName.stringValue
-        let date = addMedicationVC.datePicker.stringValue
-        var medicationEntered = Medication(medName: name, takeDate: date)
-        medicationLog.addMedication(medication: medicationEntered) //add to log
+       // let name = addMedicationVC.medicineName.stringValue
+     //   let date = addMedicationVC.datePicker.stringValue
+      //  var medicationEntered = Medication(medName: name, takeDate: date)
+       // medicationLog.addMedication(medication: medicationEntered) //add to log
         //Name.stringValue(medicationEntered.name)
         //Date.stringValue(medicationEntered.date)
     }

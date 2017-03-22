@@ -13,9 +13,14 @@ class Medication{
     var name = "null"
     var date = "null"
     
+    init(){}
+    
     init(medName : String, takeDate : String) {
         self.name = medName
         self.date = takeDate
     }
     
+    func addName(medName: String){
+        self.name = medName;
+    }
 }
