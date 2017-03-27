@@ -9,7 +9,7 @@
 import Foundation
 import Cocoa
 
-class MedicationScreenViewController: NSViewController {
+class MedicationScreenViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
     @IBOutlet weak var MedicationTable: NSTableView!
     @IBOutlet weak var Name: NSTextFieldCell!
@@ -22,6 +22,8 @@ class MedicationScreenViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        MedicationTable.delegate = self
+        MedicationTable.dataSource = self
         
         // Do any additional setup after loading the view.
     }
@@ -32,31 +34,58 @@ class MedicationScreenViewController: NSViewController {
         }
     }
     
-    func addToTable(medication : Medication) {
+    /*func addToTable(medication : Medication) {
         medicationLog.addMedication(medication: medication) //add to log
         setRowValue(MedicationTable, name : "Name", row: 0)
-    }
+    }*/
     
     func numberOfRows(in tableView: NSTableView) -> Int {
         return medicationLog.medicationList.count
     }
     
-    func setRowValue(_ tableView: NSTableView, name : String, row: Int) -> NSView? {
-        let nameCellView = MedicationTable.tableColumns[0].dataCell(forRow: row) as! NSTableCellView
-        
+    func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?{
+        if tableColumn == tableView.tableColumns[0] {
+            if let cell = tableView.make(withIdentifier: "NameCellID", owner: nil) as? NSTableCellView {
+                print(self.medicationLog.medicationList[row].name)
+                cell.textField?.stringValue = self.medicationLog.medicationList[row].name
+                    //self.medicationLog.medicationList[row].name
+                return cell
+            }
+        }
     
+        return nil
+    }
+    
+    
+    
+    /*func setRowValue(_ tableView: NSTableView, name : String, row: Int) -> NSView? {
+        
+        
+        let nameCell = MedicationTable.tableColumns[0].dataCell(forRow: row) as! NSTextFieldCell
+        let nameCellView = nameCell.view
+        
+        
         nameCellView.textField?.stringValue = self.medicationLog.medicationList[row].name
         // TODO: add other attributes
         return nameCellView
     
-    }
+    }*/
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if (segue.identifier == "AddMedicationSegue") {
-            let addMedication = segue.destinationController as! AddMedicationViewController;
-            addMedication.medScreen = self
+            let addMedication = segue.destinationController as! AddMedicationViewController
+            addMedication.completionHandler = { //completion handler that recieves medication object
+                
+                (med: Medication) in 
+                    self.medicationLog.medicationList.append(med)
+                    self.MedicationTable.reloadData()
+                    self.dismissViewController(addMedication)
+                    self.MedicationTable.reloadData()
+                    
+                
+            }}
         }
     }
     
-}
+
 
