@@ -12,6 +12,8 @@ import Cocoa
 class AddMedicationViewController: NSViewController {
     
 
+    @IBOutlet weak var medDate: NSDatePicker!
+    @IBOutlet weak var contentView: NSClipView!
     var medicationEntered = Medication();
     var medScreen : MedicationScreenViewController!
     
@@ -23,7 +25,7 @@ class AddMedicationViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        contentView.scroll(NSPoint(x:0, y:500))
         // Do any additional setup after loading the view.
     }
     
@@ -34,11 +36,28 @@ class AddMedicationViewController: NSViewController {
     }
     
     
+    @IBAction func openBarcode(_ sender: Any) {
+        let openPanel = NSOpenPanel()
+        openPanel.allowsMultipleSelection = false
+        openPanel.canChooseDirectories = false
+        openPanel.canCreateDirectories = false
+        openPanel.canChooseFiles = true
+        openPanel.begin { (result) -> Void in
+            if result == NSFileHandlingPanelOKButton {
+                NSLog(openPanel.urls[0].absoluteString);
+                NSLog(ViewController().scanImage(openPanel.urls[0].absoluteString));
+
+            }
+            if result == NSFileHandlingPanelCancelButton {
+            }
+        }
+    }
     
     
     @IBAction func addMedication(_ sender: NSButton) {
-        print(medName.stringValue)
+        print(medDate.stringValue)
         medicationEntered.addName(medName: medName.stringValue) //add name to medication object
+        medicationEntered.setDate(medDate:  medDate.stringValue)
 //        performSegue(withIdentifier: "AddMedicationSegue", sender: self)
 //
         //medScreen.addToTable(medication: Medication(medName: medicationName.stringValue, takeDate: prescriptionDate.stringValue))

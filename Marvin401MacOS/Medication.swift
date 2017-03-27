@@ -23,4 +23,8 @@ class Medication{
     func addName(medName: String){
         self.name = medName;
     }
+    
+    func setDate(medDate: String){
+        self.date = medDate
+    }
 }

@@ -46,9 +46,13 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     func tableView(_ tableView: NSTableView, viewFor tableColumn: NSTableColumn?, row: Int) -> NSView?{
         if tableColumn == tableView.tableColumns[0] {
             if let cell = tableView.make(withIdentifier: "NameCellID", owner: nil) as? NSTableCellView {
-                print(self.medicationLog.medicationList[row].name)
                 cell.textField?.stringValue = self.medicationLog.medicationList[row].name
-                    //self.medicationLog.medicationList[row].name
+                return cell
+            }
+        }
+        else if tableColumn == tableView.tableColumns[1] {
+            if let cell = tableView.make(withIdentifier: "DateCellID", owner: nil) as? NSTableCellView {
+                cell.textField?.stringValue = self.medicationLog.medicationList[row].date
                 return cell
             }
         }
@@ -73,6 +77,9 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if (segue.identifier == "AddMedicationSegue") {
+            
+                        
+            
             let addMedication = segue.destinationController as! AddMedicationViewController
             addMedication.completionHandler = { //completion handler that recieves medication object
                 

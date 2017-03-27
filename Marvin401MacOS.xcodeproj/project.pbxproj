@@ -17,6 +17,8 @@
 		83EF24631E70C25500F81807 /* AddMedicationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24621E70C25500F81807 /* AddMedicationViewController.swift */; };
 		83EF24661E70C33C00F81807 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24641E70C33C00F81807 /* Medication.swift */; };
 		83EF24671E70C33C00F81807 /* MedicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24651E70C33C00F81807 /* MedicationLog.swift */; };
+		BAFB18851E89BC3300C29ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB18841E89BC3300C29ABC /* ViewController.m */; };
+		BAFB18881E89BF4600C29ABC /* libBarcodeScanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFB18871E89BF4600C29ABC /* libBarcodeScanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,11 @@
 		83EF24621E70C25500F81807 /* AddMedicationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddMedicationViewController.swift; sourceTree = "<group>"; };
 		83EF24641E70C33C00F81807 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
 		83EF24651E70C33C00F81807 /* MedicationLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedicationLog.swift; sourceTree = "<group>"; };
+		BAFB18821E89BC3300C29ABC /* Marvin401MacOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Marvin401MacOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		BAFB18831E89BC3300C29ABC /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BAFB18841E89BC3300C29ABC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BAFB18861E89BC5C00C29ABC /* BarcodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeScanner.h; sourceTree = "<group>"; };
+		BAFB18871E89BF4600C29ABC /* libBarcodeScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBarcodeScanner.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFB18881E89BF4600C29ABC /* libBarcodeScanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +111,10 @@
 		838E04B21E5F5DDF00EC02DD /* Marvin401MacOS */ = {
 			isa = PBXGroup;
 			children = (
+				BAFB18871E89BF4600C29ABC /* libBarcodeScanner.a */,
+				BAFB18861E89BC5C00C29ABC /* BarcodeScanner.h */,
+				BAFB18831E89BC3300C29ABC /* ViewController.h */,
+				BAFB18841E89BC3300C29ABC /* ViewController.m */,
 				838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */,
 				838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */,
 				83EF24601E70C23200F81807 /* MedicationScreenViewController.swift */,
@@ -112,6 +124,7 @@
 				83EF24651E70C33C00F81807 /* MedicationLog.swift */,
 				1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */,
 				838E04BC1E5F5DDF00EC02DD /* Info.plist */,
+				BAFB18821E89BC3300C29ABC /* Marvin401MacOS-Bridging-Header.h */,
 			);
 			path = Marvin401MacOS;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 				TargetAttributes = {
 					838E04AF1E5F5DDF00EC02DD = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					838E04C01E5F5DDF00EC02DD = {
@@ -267,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAFB18851E89BC3300C29ABC /* ViewController.m in Sources */,
 				838E04B61E5F5DDF00EC02DD /* HomeViewController.swift in Sources */,
 				83EF24671E70C33C00F81807 /* MedicationLog.swift in Sources */,
 				838E04B41E5F5DDF00EC02DD /* AppDelegate.swift in Sources */,
@@ -402,11 +417,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Marvin401MacOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marvin401MacOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.Marvin401MacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvin401MacOS/Marvin401MacOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -415,11 +437,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Marvin401MacOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Marvin401MacOS",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = edu.usc.Marvin401MacOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Marvin401MacOS/Marvin401MacOS-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
