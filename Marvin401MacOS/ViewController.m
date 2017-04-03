@@ -82,7 +82,7 @@
 
 - (void) initDecoder {
     //register your copy of library with given key
-    int registerResult = MWB_registerSDK("key");
+    int registerResult = MWB_registerSDK("U3r/Hm9dWjN0MuECGDDxuy7p76CWU4wpkxZFXTRKsn8=");
     
     switch (registerResult) {
         case MWB_RTREG_OK:
@@ -249,11 +249,8 @@
 
 - (NSString *) scanImage: (NSString *)imageName {
     
-    
-    
     NSString *resourcePath = [[NSBundle mainBundle] pathForResource: imageName ofType:@""];
     NSData *data = [NSData dataWithContentsOfFile:resourcePath];
-    
     if (!data) {
         //try with absolute path
         data = [NSData dataWithContentsOfFile: imageName];
@@ -341,7 +338,7 @@
     
     // Display the dialog box.  If the OK pressed,
     // process the files.
-    if ( [openDlg runModal] == NSOKButton ) {
+    if ( [openDlg runModal] == NSModalResponseOK ) {
         
         // Gets list of all files selected
         NSArray *files = [openDlg URLs];

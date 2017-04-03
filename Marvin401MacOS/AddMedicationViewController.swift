@@ -12,6 +12,7 @@ import Cocoa
 class AddMedicationViewController: NSViewController {
     
 
+    @IBOutlet weak var prescriptionNumber: NSTextField!
     @IBOutlet weak var medDate: NSDatePicker!
     @IBOutlet weak var contentView: NSClipView!
     var medicationEntered = Medication();
@@ -45,8 +46,8 @@ class AddMedicationViewController: NSViewController {
         openPanel.begin { (result) -> Void in
             if result == NSFileHandlingPanelOKButton {
                 NSLog(openPanel.urls[0].absoluteString);
-                NSLog(ViewController().scanImage(openPanel.urls[0].absoluteString));
-
+                NSLog(ViewController().scanImage(openPanel.urls[0].path));
+                self.prescriptionNumber.stringValue = ViewController().scanImage(openPanel.urls[0].path)
             }
             if result == NSFileHandlingPanelCancelButton {
             }
