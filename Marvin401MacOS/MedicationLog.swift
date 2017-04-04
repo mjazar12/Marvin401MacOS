@@ -26,6 +26,11 @@ class MedicationLog{
         
     }
     
+    func sortByNameDecending() -> [Medication] {
+        return medicationList.sorted(by: { $0.name > $1.name })
+        
+    }
+    
     func sortByDate() -> [Medication] {
         return medicationList.sorted(by: { $0.date < $1.date })
     }
