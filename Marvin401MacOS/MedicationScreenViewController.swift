@@ -14,16 +14,28 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     @IBOutlet weak var MedicationTable: NSTableView!
     @IBOutlet weak var Name: NSTextFieldCell!
     @IBOutlet weak var Date: NSTextFieldCell!
+    @IBOutlet weak var nameColumn: NSTableColumn!
     
     var medicationLog = MedicationLog()
     let addMedicationVC = AddMedicationViewController()
     var medicationAdded = Medication()
     
+    var sortAcending = true
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         MedicationTable.delegate = self
         MedicationTable.dataSource = self
+        
+        
+        let nameSortDescriptor = NSSortDescriptor(key: "name", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
+        let dateSortDescriptor = NSSortDescriptor(key: "date", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
+        
+        
+        MedicationTable.tableColumns[0].sortDescriptorPrototype = nameSortDescriptor
+        MedicationTable.tableColumns[1].sortDescriptorPrototype = dateSortDescriptor
+        
         
         // Do any additional setup after loading the view.
     }
@@ -61,10 +73,26 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     }
     
     
+    func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
+        
+        if(sortAcending){
+            self.medicationLog.medicationList = self.medicationLog.sortByName()
+            self.MedicationTable.reloadData()
+            sortAcending = false
+        }
+        else {
+            self.medicationLog.medicationList = self.medicationLog.sortByNameDecending()
+            self.MedicationTable.reloadData()
+            sortAcending = true
+        }
+        
+    }
+   
+
     
     /*func setRowValue(_ tableView: NSTableView, name : String, row: Int) -> NSView? {
-        
-        
+     
+     
         let nameCell = MedicationTable.tableColumns[0].dataCell(forRow: row) as! NSTextFieldCell
         let nameCellView = nameCell.view
         
@@ -78,8 +106,6 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         if (segue.identifier == "AddMedicationSegue") {
             
-                        
-            
             let addMedication = segue.destinationController as! AddMedicationViewController
             addMedication.completionHandler = { //completion handler that recieves medication object
                 
@@ -87,9 +113,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
                     self.medicationLog.medicationList.append(med)
                     self.MedicationTable.reloadData()
                     self.dismissViewController(addMedication)
-                    self.MedicationTable.reloadData()
-                    
-                
+                    self.MedicationTable.reloadData()                
             }}
         }
     }
