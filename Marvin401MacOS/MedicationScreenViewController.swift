@@ -11,7 +11,7 @@ import Cocoa
 
 class MedicationScreenViewController: NSViewController, NSTableViewDataSource, NSTableViewDelegate {
     
-    @IBOutlet weak var MedicationTable: NSTableView!
+    @IBOutlet weak var MedicationTable: NSTableView!        //field variables
     @IBOutlet weak var Name: NSTextFieldCell!
     @IBOutlet weak var Date: NSTextFieldCell!
     @IBOutlet weak var Dosage: NSTextFieldCell!
@@ -43,7 +43,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
         let idSortDescriptor = NSSortDescriptor(key: "id", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
         
         
-        MedicationTable.tableColumns[0].sortDescriptorPrototype = nameSortDescriptor
+        MedicationTable.tableColumns[0].sortDescriptorPrototype = nameSortDescriptor        //sort descriptors
         MedicationTable.tableColumns[1].sortDescriptorPrototype = dateSortDescriptor
         MedicationTable.tableColumns[2].sortDescriptorPrototype = dosageSortDescriptor
         MedicationTable.tableColumns[3].sortDescriptorPrototype = instructionsSortDescriptor
@@ -105,7 +105,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
         
-        if(sortAcendingName){
+        if(sortAcendingName){                           //sort by name
             self.medicationLog.medicationList = self.medicationLog.sortByName()
             self.MedicationTable.reloadData()
             sortAcendingName = false
@@ -116,7 +116,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
             sortAcendingName = true
         }
         
-        if(sortAcendingDate){
+        if(sortAcendingDate){                           //sort by date
             self.medicationLog.medicationList = self.medicationLog.sortByDate()
             self.MedicationTable.reloadData()
             sortAcendingDate = false
@@ -127,7 +127,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
             sortAcendingDate = true
         }
         
-        if(sortAcendingDosage){
+        if(sortAcendingDosage){                             //sort by dosage
             self.medicationLog.medicationList = self.medicationLog.sortByDosage()
             self.MedicationTable.reloadData()
             sortAcendingDosage = false
@@ -138,7 +138,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
             sortAcendingDosage = true
         }
         
-        if(sortAcendingInstructions){
+        if(sortAcendingInstructions){                               //sorting by instructions
             self.medicationLog.medicationList = self.medicationLog.sortByInstructions()
             self.MedicationTable.reloadData()
             sortAcendingInstructions = false
@@ -149,7 +149,7 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
             sortAcendingInstructions = true
         }
         
-        if(sortAcendingID){
+        if(sortAcendingID){                                         //sorting by id
             self.medicationLog.medicationList = self.medicationLog.sortByID()
             self.MedicationTable.reloadData()
             sortAcendingID = false
