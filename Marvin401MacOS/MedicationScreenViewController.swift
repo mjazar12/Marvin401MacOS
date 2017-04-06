@@ -14,7 +14,10 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     @IBOutlet weak var MedicationTable: NSTableView!
     @IBOutlet weak var Name: NSTextFieldCell!
     @IBOutlet weak var Date: NSTextFieldCell!
-    @IBOutlet weak var nameColumn: NSTableColumn!
+    @IBOutlet weak var Dosage: NSTextFieldCell!
+    @IBOutlet weak var Instructions: NSTextFieldCell!
+    @IBOutlet weak var ID: NSTextFieldCell!
+    
     
     var medicationLog = MedicationLog()
     let addMedicationVC = AddMedicationViewController()
@@ -31,11 +34,16 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
         
         let nameSortDescriptor = NSSortDescriptor(key: "name", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
         let dateSortDescriptor = NSSortDescriptor(key: "date", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
+        let dosageSortDescriptor = NSSortDescriptor(key: "dosage", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
+        let instructionsSortDescriptor = NSSortDescriptor(key: "instructions", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
+        let idSortDescriptor = NSSortDescriptor(key: "id", ascending: true, selector: #selector(NSString.localizedStandardCompare(_:)))
         
         
         MedicationTable.tableColumns[0].sortDescriptorPrototype = nameSortDescriptor
         MedicationTable.tableColumns[1].sortDescriptorPrototype = dateSortDescriptor
-        
+        MedicationTable.tableColumns[2].sortDescriptorPrototype = dosageSortDescriptor
+        MedicationTable.tableColumns[3].sortDescriptorPrototype = instructionsSortDescriptor
+        MedicationTable.tableColumns[4].sortDescriptorPrototype = idSortDescriptor
         
         // Do any additional setup after loading the view.
     }
@@ -65,6 +73,24 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
         else if tableColumn == tableView.tableColumns[1] {
             if let cell = tableView.make(withIdentifier: "DateCellID", owner: nil) as? NSTableCellView {
                 cell.textField?.stringValue = self.medicationLog.medicationList[row].date
+                return cell
+            }
+        }
+        else if tableColumn == tableView.tableColumns[2] {
+            if let cell = tableView.make(withIdentifier: "DosageCellID", owner: nil) as? NSTableCellView {
+                cell.textField?.stringValue = self.medicationLog.medicationList[row].dosage
+                return cell
+            }
+        }
+        else if tableColumn == tableView.tableColumns[3] {
+            if let cell = tableView.make(withIdentifier: "InstructionsCellID", owner: nil) as? NSTableCellView {
+                cell.textField?.stringValue = self.medicationLog.medicationList[row].instructions
+                return cell
+            }
+        }
+        else if tableColumn == tableView.tableColumns[4] {
+            if let cell = tableView.make(withIdentifier: "IDCellID", owner: nil) as? NSTableCellView {
+                cell.textField?.stringValue = self.medicationLog.medicationList[row].id
                 return cell
             }
         }
