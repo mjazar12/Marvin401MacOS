@@ -23,7 +23,11 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     let addMedicationVC = AddMedicationViewController()
     var medicationAdded = Medication()
     
-    var sortAcending = true
+    var sortAcendingName = true
+    var sortAcendingDate = true
+    var sortAcendingDosage = true
+    var sortAcendingInstructions = true
+    var sortAcendingID = true
 
     
     override func viewDidLoad() {
@@ -101,15 +105,59 @@ class MedicationScreenViewController: NSViewController, NSTableViewDataSource, N
     
     func tableView(_ tableView: NSTableView, sortDescriptorsDidChange oldDescriptors: [NSSortDescriptor]) {
         
-        if(sortAcending){
+        if(sortAcendingName){
             self.medicationLog.medicationList = self.medicationLog.sortByName()
             self.MedicationTable.reloadData()
-            sortAcending = false
+            sortAcendingName = false
         }
         else {
             self.medicationLog.medicationList = self.medicationLog.sortByNameDecending()
             self.MedicationTable.reloadData()
-            sortAcending = true
+            sortAcendingName = true
+        }
+        
+        if(sortAcendingDate){
+            self.medicationLog.medicationList = self.medicationLog.sortByDate()
+            self.MedicationTable.reloadData()
+            sortAcendingDate = false
+        }
+        else {
+            self.medicationLog.medicationList = self.medicationLog.sortByDateDecending()
+            self.MedicationTable.reloadData()
+            sortAcendingDate = true
+        }
+        
+        if(sortAcendingDosage){
+            self.medicationLog.medicationList = self.medicationLog.sortByDosage()
+            self.MedicationTable.reloadData()
+            sortAcendingDosage = false
+        }
+        else {
+            self.medicationLog.medicationList = self.medicationLog.sortByDosageDecending()
+            self.MedicationTable.reloadData()
+            sortAcendingDosage = true
+        }
+        
+        if(sortAcendingInstructions){
+            self.medicationLog.medicationList = self.medicationLog.sortByInstructions()
+            self.MedicationTable.reloadData()
+            sortAcendingInstructions = false
+        }
+        else {
+            self.medicationLog.medicationList = self.medicationLog.sortByInstructionsDecending()
+            self.MedicationTable.reloadData()
+            sortAcendingInstructions = true
+        }
+        
+        if(sortAcendingID){
+            self.medicationLog.medicationList = self.medicationLog.sortByID()
+            self.MedicationTable.reloadData()
+            sortAcendingID = false
+        }
+        else {
+            self.medicationLog.medicationList = self.medicationLog.sortByIDDecending()
+            self.MedicationTable.reloadData()
+            sortAcendingID = true
         }
         
     }

@@ -18,11 +18,12 @@ class AddMedicationViewController: NSViewController {
     var medicationEntered = Medication();
     var medScreen : MedicationScreenViewController!
     
+    @IBOutlet weak var dosage: NSTextField!
     @IBOutlet weak var idField: NSTextField!
-    @IBOutlet weak var instructionsField: NSTextField!
-    @IBOutlet weak var dosageField: NSTextField!
     @IBOutlet weak var medicationName: NSTextField!
     @IBOutlet weak var prescriptionDate: NSDatePicker!
+    @IBOutlet weak var dosageField: NSTextField!
+    @IBOutlet weak var instructionsField: NSTextField!
     
     @IBOutlet weak var medName: NSTextField!
     var completionHandler: ((_ med: Medication) -> Void)? //completion handler to store medication obj.
@@ -62,7 +63,7 @@ class AddMedicationViewController: NSViewController {
         medicationEntered.setDate(medDate:  medDate.stringValue)
         medicationEntered.setDosage(medDosage:  dosageField.stringValue)
         medicationEntered.setInstructions(medInstructions: instructionsField.stringValue)
-        medicationEntered.setID(medID: idField.stringValue)
+        medicationEntered.setID(medID: prescriptionNumber.stringValue)
 //        performSegue(withIdentifier: "AddMedicationSegue", sender: self)
 //
         //medScreen.addToTable(medication: Medication(medName: medicationName.stringValue, takeDate: prescriptionDate.stringValue))
