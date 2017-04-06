@@ -48,8 +48,6 @@ class AddMedicationViewController: NSViewController {
         openPanel.canChooseFiles = true
         openPanel.begin { (result) -> Void in
             if result == NSFileHandlingPanelOKButton {
-                NSLog(openPanel.urls[0].absoluteString);
-                NSLog(ViewController().scanImage(openPanel.urls[0].path));
                 self.prescriptionNumber.stringValue = ViewController().scanImage(openPanel.urls[0].path)
             }
             if result == NSFileHandlingPanelCancelButton {

@@ -311,7 +311,7 @@
             case FOUND_MSI: typeName = @"MSI Plessey";break;
     	}
         
-        resultString = [NSString stringWithFormat:@"%@ (%@)", resultString, typeName];
+        resultString = [NSString stringWithFormat:@"%@", resultString];
     } else {
 		resultString = @"No barcode found in image";
 	}
