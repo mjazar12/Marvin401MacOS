@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D1579B31E9C83730047CCCC /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1579B11E9C83730047CCCC /* Alamofire.framework */; };
+		1D1579B41E9C83730047CCCC /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D1579B21E9C83730047CCCC /* SwiftyJSON.framework */; };
 		1DF8FDFC1E82EA6D006090B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */; };
 		838E04B41E5F5DDF00EC02DD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */; };
 		838E04B61E5F5DDF00EC02DD /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */; };
@@ -19,6 +21,7 @@
 		83EF24671E70C33C00F81807 /* MedicationLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83EF24651E70C33C00F81807 /* MedicationLog.swift */; };
 		BAFB18851E89BC3300C29ABC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAFB18841E89BC3300C29ABC /* ViewController.m */; };
 		BAFB18881E89BF4600C29ABC /* libBarcodeScanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BAFB18871E89BF4600C29ABC /* libBarcodeScanner.a */; };
+		C45EE921C83C4EDEBD63026A /* Pods_Marvin401MacOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDC389D92557C42B61006045 /* Pods_Marvin401MacOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D1579B11E9C83730047CCCC /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/Marvin401MacOS-edqurgtcbvvmeucsufujofdwdozi/Build/Products/Debug/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		1D1579B21E9C83730047CCCC /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../Library/Developer/Xcode/DerivedData/Marvin401MacOS-edqurgtcbvvmeucsufujofdwdozi/Build/Products/Debug/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		1DF8FDFB1E82EA6D006090B9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		40F3C52D600709449D31330E /* Pods-Marvin401MacOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvin401MacOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Marvin401MacOS/Pods-Marvin401MacOS.debug.xcconfig"; sourceTree = "<group>"; };
 		838E04B01E5F5DDF00EC02DD /* Marvin401MacOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marvin401MacOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		838E04B31E5F5DDF00EC02DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		838E04B51E5F5DDF00EC02DD /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +66,8 @@
 		BAFB18841E89BC3300C29ABC /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BAFB18861E89BC5C00C29ABC /* BarcodeScanner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarcodeScanner.h; sourceTree = "<group>"; };
 		BAFB18871E89BF4600C29ABC /* libBarcodeScanner.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libBarcodeScanner.a; sourceTree = "<group>"; };
+		CDC389D92557C42B61006045 /* Pods_Marvin401MacOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Marvin401MacOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F44DB54E5EDFF07E87BB5A /* Pods-Marvin401MacOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Marvin401MacOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Marvin401MacOS/Pods-Marvin401MacOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D1579B31E9C83730047CCCC /* Alamofire.framework in Frameworks */,
+				1D1579B41E9C83730047CCCC /* SwiftyJSON.framework in Frameworks */,
 				BAFB18881E89BF4600C29ABC /* libBarcodeScanner.a in Frameworks */,
+				C45EE921C83C4EDEBD63026A /* Pods_Marvin401MacOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +106,8 @@
 				838E04C41E5F5DDF00EC02DD /* Marvin401MacOSTests */,
 				838E04CF1E5F5DDF00EC02DD /* Marvin401MacOSUITests */,
 				838E04B11E5F5DDF00EC02DD /* Products */,
+				C46E4D93EAE55DFC1A4766B4 /* Pods */,
+				9AE101CB34349F9EE7099D2F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,6 +160,25 @@
 			path = Marvin401MacOSUITests;
 			sourceTree = "<group>";
 		};
+		9AE101CB34349F9EE7099D2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D1579B11E9C83730047CCCC /* Alamofire.framework */,
+				1D1579B21E9C83730047CCCC /* SwiftyJSON.framework */,
+				CDC389D92557C42B61006045 /* Pods_Marvin401MacOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46E4D93EAE55DFC1A4766B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				40F3C52D600709449D31330E /* Pods-Marvin401MacOS.debug.xcconfig */,
+				D3F44DB54E5EDFF07E87BB5A /* Pods-Marvin401MacOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 838E04D51E5F5DDF00EC02DD /* Build configuration list for PBXNativeTarget "Marvin401MacOS" */;
 			buildPhases = (
+				AADCD7781CE2A6FD2E0921A1 /* [CP] Check Pods Manifest.lock */,
 				838E04AC1E5F5DDF00EC02DD /* Sources */,
 				838E04AD1E5F5DDF00EC02DD /* Frameworks */,
 				838E04AE1E5F5DDF00EC02DD /* Resources */,
+				9D65F6E3D67FF6A0E3367E1D /* [CP] Embed Pods Frameworks */,
+				6DBB7F0425BA0410A1C584EA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +310,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6DBB7F0425BA0410A1C584EA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvin401MacOS/Pods-Marvin401MacOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D65F6E3D67FF6A0E3367E1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Marvin401MacOS/Pods-Marvin401MacOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AADCD7781CE2A6FD2E0921A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		838E04AC1E5F5DDF00EC02DD /* Sources */ = {
@@ -415,6 +498,7 @@
 		};
 		838E04D61E5F5DDF00EC02DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40F3C52D600709449D31330E /* Pods-Marvin401MacOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -435,6 +519,7 @@
 		};
 		838E04D71E5F5DDF00EC02DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F44DB54E5EDFF07E87BB5A /* Pods-Marvin401MacOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

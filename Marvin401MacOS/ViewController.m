@@ -205,7 +205,7 @@
     // set decoder effort level (1 - 5)
     // for live scanning scenarios, a setting between 1 to 3 will suffice
     // levels 4 and 5 are typically reserved for batch scanning
-    MWB_setLevel(3);
+    MWB_setLevel(5);
     
     //get and print Library version
     int ver = MWB_getLibVersion();

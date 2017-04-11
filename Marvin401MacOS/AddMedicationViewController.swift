@@ -8,6 +8,8 @@
 
 import Foundation
 import Cocoa
+import Alamofire
+import SwiftyJSON
 
 class AddMedicationViewController: NSViewController {
     
@@ -18,6 +20,8 @@ class AddMedicationViewController: NSViewController {
     var medicationEntered = Medication();
     var medScreen : MedicationScreenViewController!
     
+    @IBOutlet weak var medicationNameField: NSTextField!
+    @IBOutlet weak var whatItsFor: NSTextField!
     @IBOutlet weak var dosage: NSTextField!
     @IBOutlet weak var idField: NSTextField!
     @IBOutlet weak var medicationName: NSTextField!
@@ -49,9 +53,31 @@ class AddMedicationViewController: NSViewController {
         openPanel.canChooseFiles = true
         openPanel.begin { (result) -> Void in
             if result == NSFileHandlingPanelOKButton {
-                self.prescriptionNumber.stringValue = ViewController().scanImage(openPanel.urls[0].path)
-            }
-            if result == NSFileHandlingPanelCancelButton {
+                print(ViewController().scanImage(openPanel.urls[0].path))
+                
+                var str = ViewController().scanImage(openPanel.urls[0].path).components(separatedBy: "/").last
+                str = (str?.components(separatedBy: "-")[0])! + "-" + (str?.components(separatedBy: "-")[1])!
+                self.prescriptionNumber.stringValue = str!
+                let url = "https://api.fda.gov/drug/label.json?search=openfda.product_ndc:%22" + str! + "%22&limit=100"
+                print(url)
+                Alamofire.request(url).responseJSON { (responseData) -> Void in
+                    
+                    let json = JSON(responseData.result.value!)
+                    print(json["results"][0])
+                    
+                    if let name = json["results"][0]["openfda"]["brand_name"][0].string {
+                        self.medicationNameField.stringValue = name
+                    }
+                    if let derscription = json["results"][0]["description"][0].string {
+                        self.whatItsFor.stringValue = derscription
+                    }
+                    if let dosage = json["results"][0]["dosage_and_administration"][0].string {
+                        self.dosageField.stringValue = dosage
+                        self.instructionsField.stringValue = dosage
+                    }
+                }
+                if result == NSFileHandlingPanelCancelButton {
+                }
             }
         }
     }
